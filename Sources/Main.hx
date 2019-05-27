@@ -100,13 +100,13 @@ class Main {
 			frame.g2.font = Assets.fonts.SFNSDisplay;
         	frame.g2.fontSize = 32;
         	frame.g2.color = Color.White;
-			var display = "BTC: " + Json.stringify(btc.quotes.USD.price) + " USD";
+			var display = "BTC: \t" + Json.stringify(btc.quotes.USD.price).substring(0,7) + " USD";
 			frame.g2.drawString(display,200,200);
-			var display = "LTC: " + Json.stringify(ltc.quotes.USD.price) + " USD";
+			var display = "LTC: \t" + Json.stringify(ltc.quotes.USD.price).substring(0,7) + " USD";
 			frame.g2.drawString(display,200,250);
-			var display = "ETH: " + Json.stringify(eth.quotes.USD.price) + " USD";
+			var display = "ETH: \t" + Json.stringify(eth.quotes.USD.price).substring(0,7) + " USD";
 			frame.g2.drawString(display,200,300);
-			var display = "DOGE: " + Json.stringify(doge.quotes.USD.price) + " USD";
+			var display = "DOGE: \t" + Json.stringify(doge.quotes.USD.price).substring(0,7) + " USD";
 			frame.g2.drawString(display,200,350);
 		} else {
 			frame.g2.font = Assets.fonts.SFNSDisplay;
